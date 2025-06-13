@@ -1,4 +1,6 @@
 // FlightDAO.java
+// kd
+
 import java.sql.*;
 import java.util.*;
 
@@ -53,6 +55,8 @@ public class FlightDAO {
         return flights;
     }
     
+    // Nishanth
+
     public List<Flight> searchFlights(String query1, String query2) {
         List<Flight> flights = new ArrayList<>();
         String sql = "SELECT * FROM flights WHERE flight_number ILIKE ? OR source ILIKE ? OR destination ILIKE ?";

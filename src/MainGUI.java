@@ -1,11 +1,9 @@
 // MainGUI.java
-import javax.swing.*;
-import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.sql.Timestamp;
 import java.util.List;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 
 public class MainGUI extends JFrame {
     private FlightDAO flightDAO;
@@ -55,6 +53,8 @@ public class MainGUI extends JFrame {
         setLocationRelativeTo(null);
     }
     
+    // kd
+
     private JPanel createFlightPanel() {
         JPanel panel = new JPanel(new BorderLayout());
         
@@ -173,6 +173,8 @@ public class MainGUI extends JFrame {
         return panel;
     }
     
+
+    // kd
     private JPanel createPassengerPanel() {
         JPanel panel = new JPanel(new BorderLayout());
         
@@ -274,6 +276,8 @@ public class MainGUI extends JFrame {
         return panel;
     }
     
+    // Nishanth
+
     private JPanel createBookingPanel() {
         JPanel panel = new JPanel(new BorderLayout());
 
@@ -379,6 +383,7 @@ public class MainGUI extends JFrame {
         return panel;
     }
     
+    // nishanth
     private JPanel createSearchPanel() {
         JPanel panel = new JPanel(new BorderLayout());
         
@@ -427,6 +432,8 @@ public class MainGUI extends JFrame {
         
         return panel;
     }
+    
+    // kd
     
     private void loadData() {
         loadFlightData();
